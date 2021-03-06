@@ -17,6 +17,7 @@ import IndiretaPai from './components/comunicacao/IndiretaPai'
 import IndiretaPaiEstado from './components/comunicacao/IndiretaPaiEstado'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 const tag = <strong>Olá React!!!</strong>
 
@@ -25,6 +26,10 @@ export default function App() {
         <div className="App">
             <h1>Funcamentos React</h1>
             <div className="Cards">
+                <Card titulo="Projeto Mega sena" color="#B9006E">
+                    <Mega qtde={6} />
+                </Card>
+
                 <Card titulo="Contador" color="#424242">
                     <Contador numeroInicial={10} />
                 </Card>
